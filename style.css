@@ -562,16 +562,7 @@ h3 {
 		margin-top:2vh;
 	}
 	
-	
-h1 {
-  	color: black;
- 	display: block;
-	margin-top: 100vh;
- 	font-size:68px;
-  	letter-spacing: -1px;
-	transition: 1s;
-	
-}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -633,9 +624,10 @@ h1 {
 h1 {
   color: black;
   display: block;
-  font-size:34.3px;
+  font-size:30.3px;
   letter-spacing: -1px;
 	transition: 1s;
+	margin-top:100vh;
 }
 
 h1:hover {
