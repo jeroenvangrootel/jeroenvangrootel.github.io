@@ -543,15 +543,14 @@ h3 {
 	
 .aboutText {
 	font-size:14px;
-	text-align: center;
-	width:80vw;
-	background:black;
+	text-align: justify;
+	width:60vw;
 	margin:auto;
 }
 	
 	.aboutText p {
-		width:60vw;
-		margin:0px;
+		width:100%;
+		margin-top:3%;
 	}
 }
 
