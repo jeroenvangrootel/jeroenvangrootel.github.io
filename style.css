@@ -1,0 +1,643 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image:url(images/bg-black.jpg);
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.plainBlack {
+	
+	width:100%;
+	height: 100vh;
+}
+.plainwhite {
+	background-image:url(images/bg-white.jpg);
+	width:100%;
+	height: 100vh;
+	background-color: white;
+	color:black;
+	overflow:hidden;
+}
+
+.aboutText {
+	font-size:18px;
+	width: 700px;
+	margin: 20vh auto 10vh auto;
+	text-align: center;
+}
+
+.logo {
+	position: absolute;
+    top: 50%;  
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); 
+	width: 10%;
+}
+
+
+.reserve-link {
+	background:black;
+	color: white;
+	height: 35px;
+	width: 200px;
+	border-radius: 4.5px;
+	margin: 10vh auto;
+
+}
+
+.reserve-link a {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	
+}
+
+.reserve-link h4 {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding-top:8px;
+	margin-left: 30px;
+	
+}
+
+.block {
+	background-color: white;
+	height:25px;
+	width:25px;
+	float: right;
+	margin-top:-22px;
+	margin-right:5px;
+	border-bottom-right-radius: 2.5px;
+	border-top-right-radius: 2.5px;
+	
+}
+
+.reserve-link:hover {
+	padding-right: 5px;
+	transition: 0.5s;
+	width: 195px;
+}
+
+h1 {
+  	color: black;
+ 	display: block;
+ 	font-size:68px;
+  	letter-spacing: -1px;
+	transition: 1s;
+	
+}
+
+h1:hover {
+	padding-left:20px;
+	cursor: pointer;
+}
+
+.filter-effects:hover { -webkit-filter:blur(0px); filter:blur(0px); width:770px }
+
+
+.filter-effects { -webkit-filter:blur(10px); filter:blur(10px); margin: auto; width:750px; transition: 1s; }
+
+.logo img {
+	width: 100%;
+}
+
+.lichtknop {
+	width:30px;
+	position: absolute;
+	bottom:75px;
+	right:75px;
+	transition: 0.5s;
+}
+
+.lichtknop:hover {
+	width:25px;
+	position: absolute;
+	bottom:85px;
+	right:80px;
+
+	
+}
+ 
+h3 {
+	bottom:25px;
+	position:absolute;
+	left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); 
+	text-transform: uppercase;
+}
+
+/* BLINK FAST */
+.highFreq { 
+  -webkit-animation: blinkFast 0.5s infinite alternate;
+  -moz-animation: blinkFast 0.5s infinite alternate;
+  -o-animation: blinkFast 0.5s infinite alternate;
+  animation: blinkFast 0.5s infinite alternate;
+}
+
+@-moz-keyframes blinkFast {70%{opacity: 0.7;}}
+@-webkit-keyframes blinkFast {45%{opacity: 0.5;}}
+@-o-keyframes blinkFast {70%{opacity: 0.7;}}
+@keyframes blinkFast {30%{opacity: 0.1;}}
+
+.beginFlicker {
+  color: #fff;
+  -webkit-animation: flickererBegin 3s 1 alternate;
+  -moz-animation: flickererBegin 3s 1 alternate;
+  -o-animation: flickererBegin 3s 1 alternate;
+  animation: flickererBegin 4s 1 alternate;
+}
+@keyframes flickererBegin {
+  10%{opacity:0;}
+  11%{opacity:0.2;}
+  12%{opacity:1;}
+ 13%{opacity:0;}
+  14%{opacity:1;}
+  15%{opacity:0.4;}
+  16%{opacity:0;}
+  17%{opacity:1;}
+  18%{opacity:0;}
+  19%{opacity:1;}
+  20%{opacity:0;}
+  21%{opacity:1;}
+}
+
+
+.beginFlickerWhite {
+  -webkit-animation: flickererBeginWhite 3s 1 alternate;
+  -moz-animation: flickererBeginWhite 3s 1 alternate;
+  -o-animation: flickererBeginWhite 3s 1 alternate;
+  animation: flickererBeginWhite 4s 1 alternate;
+}
+@keyframes flickererBeginWhite {
+  10%{opacity:0;}
+  11%{opacity:0.2;}
+  12%{opacity:1;}
+ 13%{opacity:0;}
+  14%{opacity:1;}
+  15%{opacity:0.4;}
+  16%{opacity:0;}
+  17%{opacity:1;}
+  18%{opacity:0;}
+  19%{opacity:1;}
+  20%{opacity:0;}
+  21%{opacity:1;}
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.blur-in {
+    -webkit-animation: blur 2s forwards;
+    -moz-animation: blur 2s forwards;
+    -o-animation: blur 2s forwards;
+    animation: blur 2s forwards;
+}
+
+.blur-out {
+    -webkit-animation: blur-out 2s forwards;
+    -moz-animation: blur-out 2s forwards;
+    -o-animation: blur-out 2s forwards;
+    animation: blur-out 2s forwards;
+}
+
+@-webkit-keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+}
+
+@-moz-keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+}
+
+@-o-keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+}
+
+@keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+}
+
+@-webkit-keyframes blur-out {
+    0% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+@-moz-keyframes blur-out {
+    0% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+@-o-keyframes blur-out {
+    0% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+@keyframes blur-out {
+    0% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+.content {
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+span {
+    color: dimgray;
+}
+
+.pop-up {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+	display: none;
+}
+
+.box {
+    background-color: black;
+    text-align: center;
+    margin-left: auto;
+	color:white;
+    margin-right: auto;
+    margin-top: 10%;
+	padding: 100px;
+    position: relative;
+	font-size:14px;
+	text-transform: uppercase;
+	line-height: 22px;
+	height:400px;
+	outline: 2px white solid;
+	outline-offset: -30px;
+}
+
+.ontdek {
+	font-weight:bold;
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+.icon img {
+	width:60px;
+	margin: 40px 20px;
+}
+
+
+.close-btn img {
+	width:40px;
+	margin: 20px 20px;
+	cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	
+.aboutText {
+	font-size:18px;
+	width: 500px;
+	text-align: center;
+}
+
+.logo {
+	position: absolute;
+    top: 50%;  
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); 
+	width: 15%;
+}
+
+
+.reserve-link {
+	background:black;
+	color: white;
+	height: 35px;
+	width: 200px;
+	border-radius: 4.5px;
+
+}
+
+.reserve-link a {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	
+}
+
+.reserve-link h4 {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding-top:8px;
+	margin-left: 30px;
+	
+}
+
+.block {
+	background-color: white;
+	height:25px;
+	width:25px;
+	float: right;
+	margin-top:-22px;
+	margin-right:5px;
+	border-bottom-right-radius: 2.5px;
+	border-top-right-radius: 2.5px;
+	
+}
+
+.reserve-link:hover {
+	padding-right: 5px;
+	transition: 0.5s;
+	width: 195px;
+}
+
+h1 {
+  color: black;
+  display: block;
+  font-size:49px;
+  letter-spacing: -1px;
+	transition: 1s;
+}
+
+h1:hover {
+	padding-left:20px;
+}
+
+.filter-effects:hover { -webkit-filter:blur(0px); filter:blur(0px); width:550px }
+
+
+.filter-effects { -webkit-filter:blur(8px); filter:blur(8px); margin: auto; width:530px; transition: 1s;}
+
+.logo img {
+	width: 100%;
+}
+
+.lichtknop {
+	width:30px;
+	position: absolute;
+	bottom:75px;
+	right:75px;
+	transition: 0.5s;
+}
+
+.lichtknop:hover {
+	width:25px;
+	position: absolute;
+	bottom:85px;
+	right:80px;
+
+	
+}
+ 
+h3 {
+	bottom:66px;
+	font-size: 14px;
+	width:400px;
+	text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+.content {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+	}
+	
+	.box {
+		margin-top:-6vh;
+		height:70vh;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	
+.aboutText {
+	font-size:18px;
+	width: 360px;
+	text-align: center;
+}
+
+.logo {
+	position: absolute;
+    top: 50%;  
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); 
+	width: 33%;
+}
+
+
+.reserve-link {
+	background:black;
+	color: white;
+	height: 35px;
+	width: 200px;
+	border-radius: 4.5px;
+
+}
+
+.reserve-link a {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	
+}
+
+.reserve-link h4 {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding-top:8px;
+	margin-left: 30px;
+	
+}
+
+.block {
+	background-color: white;
+	height:25px;
+	width:25px;
+	float: right;
+	margin-top:-22px;
+	margin-right:5px;
+	border-bottom-right-radius: 2.5px;
+	border-top-right-radius: 2.5px;
+	
+}
+
+.reserve-link:hover {
+	padding-right: 5px;
+	transition: 0.5s;
+	width: 195px;
+}
+
+h1 {
+  color: black;
+  display: block;
+  font-size:34.3px;
+  letter-spacing: -1px;
+	transition: 1s;
+}
+
+h1:hover {
+	padding-left:20px;
+}
+
+.filter-effects:hover { -webkit-filter:blur(0px); filter:blur(0px); width:385px }
+
+
+.filter-effects { -webkit-filter:blur(8px); filter:blur(8px); margin: auto; width:365px; transition: 1s;}
+
+.logo img {
+	width: 100%;
+}
+
+.lichtknop {
+	width:30px;
+	position: absolute;
+	bottom:75px;
+	right:75px;
+	transition: 0.5s;
+}
+
+.lichtknop:hover {
+	width:25px;
+	position: absolute;
+	bottom:85px;
+	right:80px;
+
+	
+}
+ 
+h3 {
+	bottom:30px;
+	font-size: 14px;
+	width:400px;
+	text-align: center;
+}
+
+}
