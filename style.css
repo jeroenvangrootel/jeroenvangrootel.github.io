@@ -24,14 +24,20 @@ body {
 	height: 100vh;
 	background-color: white;
 	color:black;
-	overflow:hidden;
 }
 
 .aboutText {
-	font-size:18px;
-	width: 700px;
+	font-size:14px;
+	width: 960px;
 	margin: 20vh auto 10vh auto;
-	text-align: center;
+	text-align: justify;
+	
+}
+
+.aboutText p {
+	width:400px;
+	margin:40px;
+	float:left;
 }
 
 .logo {
@@ -91,6 +97,7 @@ body {
 h1 {
   	color: black;
  	display: block;
+	margin-top: 50vh;
  	font-size:68px;
   	letter-spacing: -1px;
 	transition: 1s;
@@ -362,7 +369,6 @@ h3 {
 .content {
     width: 650px;
     margin: 0 auto;
-    padding-top: 100px;
 }
 
 span {
@@ -383,7 +389,7 @@ span {
     margin-left: auto;
 	color:white;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 10vh;
 	padding: 100px;
     position: relative;
 	font-size:14px;
@@ -416,9 +422,10 @@ span {
 @media only screen and (max-width: 1024px) {
 	
 .aboutText {
-	font-size:18px;
+	font-size:14px;
 	width: 500px;
 	text-align: center;
+	margin-top:10vh;
 }
 
 .logo {
@@ -537,8 +544,7 @@ h3 {
 @media only screen and (max-width: 600px) {
 	
 .aboutText {
-	font-size:18px;
-	width: 360px;
+	font-size:14px;
 	text-align: center;
 }
 
